@@ -8,6 +8,50 @@ package com.miescuela.modelo;
  *
  * @author ferlo
  */
-public class Docente {
+public class Docente extends Persona{
+    private String nombre;
+    private int edad;
+    private String materiaQueImparte;
+    private int cubiculo;
+
+    public Docente(String nombre, int edad, String materiaQueImparte, int cubiculo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.materiaQueImparte = materiaQueImparte;
+        this.cubiculo = cubiculo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getMateriaQueImparte() {
+        return materiaQueImparte;
+    }
+
+    public void setMateriaQueImparte(String materiaQueImparte) {
+        this.materiaQueImparte = materiaQueImparte;
+    }
+
+    public int getCubiculo() {
+        return cubiculo;
+    }
+
+    public void setCubiculo(int cubiculo) {
+        this.cubiculo = cubiculo;
+    }
+    
     
 }
