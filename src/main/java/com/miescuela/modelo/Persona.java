@@ -1,6 +1,6 @@
 package com.miescuela.modelo;
 
-public class Persona {
+public abstract class Persona {
 
     private String id;
     private String nombre;
