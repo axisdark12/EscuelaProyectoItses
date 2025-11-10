@@ -8,7 +8,7 @@ package com.miescuela.modelo;
  *
  * @author ferlo
  */
-public class Alumno extends Persona {
+public class Alumno extends Persona{
     private String matricula;
      private String semestre;
 
