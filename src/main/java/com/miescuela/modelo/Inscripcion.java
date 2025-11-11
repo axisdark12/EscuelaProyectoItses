@@ -1,31 +1,61 @@
 package com.miescuela.modelo;
 
-public class Inscripcion extends Alumno{
+/**
+ * Clase de Asociación: Conecta un Alumno con una Materia.
+ * Responsable de guardar la calificación.
+ * Versión básica.
+ */
+public class Inscripcion {
 
-    //Atributos de Asociación y Valor JP
-    private materia materia;
-    private double calificacion;
+   
+    private Alumno alumno;
+    private Materia materia;
+    
+    
+    private Double calificacion;
 
-    public Inscripcion(materia materia, double calificacion, String id, String nombre, String apellido, String matricula, String semestre) {
-        super(id, nombre, apellido, matricula, semestre);
-        this.materia = materia;
-        this.calificacion = calificacion;
+    
+    public Inscripcion() {
     }
+
     
+    public Inscripcion(Alumno alumno, Materia materia) {
+        this.alumno = alumno;
+        this.materia = materia;
+        this.calificacion = null; 
+    }
+
     
-    public materia getMateria() {
+
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
+
+    public Materia getMateria() {
         return materia;
     }
 
-    public void setMateria(materia materia) {
+    public void setMateria(Materia materia) {
         this.materia = materia;
     }
 
-    public double getCalificacion() {
+    public Double getCalificacion() {
         return calificacion;
     }
 
-    public void setCalificacion(double calificacion) {
+    public void setCalificacion(Double calificacion) {
         this.calificacion = calificacion;
+    }
+
+    @Override
+    public String toString() {
+        String califStr = (calificacion == null) ? "Sin calificar" : calificacion.toString();
+        return "Inscripcion [Alumno: " + alumno.getNombre() + 
+               ", Materia: " + materia.getNombre() + 
+               ", Calif: " + califStr + "]";
     }
 }
