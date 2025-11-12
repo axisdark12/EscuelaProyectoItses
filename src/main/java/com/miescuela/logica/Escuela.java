@@ -4,10 +4,25 @@
  */
 package com.miescuela.logica;
 
+import com.miescuela.modelo.*;
+import java.awt.List;
+import java.util.ArrayList;
 /**
  *
  * @author erick
  */
-public class Escuela {
-    
+public abstract class Escuela {
+   private ArrayList<Alumno> Alumnos = new ArrayList<>();
+   private ArrayList<Docente> Docentes = new ArrayList<>();
+   private ArrayList<materia> Materias = new ArrayList<>();
+   
+   public  void agregarAlumno(){
+   
+   }
+   public  void agregarProfesor(){
+       
+   }
+   public  void inscribirMateria(){
+       
+   }
 }
