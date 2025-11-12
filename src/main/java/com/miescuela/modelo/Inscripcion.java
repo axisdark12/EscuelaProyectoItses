@@ -9,7 +9,7 @@ public class Inscripcion {
 
    
     private Alumno alumno;
-    private Materia materia;
+    private materia materia;
     
     
     private Double calificacion;
@@ -19,7 +19,7 @@ public class Inscripcion {
     }
 
     
-    public Inscripcion(Alumno alumno, Materia materia) {
+    public Inscripcion(Alumno alumno, materia materia) {
         this.alumno = alumno;
         this.materia = materia;
         this.calificacion = null; 
@@ -35,11 +35,11 @@ public class Inscripcion {
         this.alumno = alumno;
     }
 
-    public Materia getMateria() {
+    public materia getMateria() {
         return materia;
     }
 
-    public void setMateria(Materia materia) {
+    public void setMateria(materia materia) {
         this.materia = materia;
     }
 
