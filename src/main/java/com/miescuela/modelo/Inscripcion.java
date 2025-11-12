@@ -55,7 +55,7 @@ public class Inscripcion {
     public String toString() {
         String califStr = (calificacion == null) ? "Sin calificar" : calificacion.toString();
         return "Inscripcion [Alumno: " + alumno.getNombre() + 
-               ", Materia: " + materia.getNombre() + 
+               ", Materia: " + materia.getNombreMateria() + 
                ", Calif: " + califStr + "]";
     }
 }

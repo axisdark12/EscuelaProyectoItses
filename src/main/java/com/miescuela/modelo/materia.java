@@ -1,14 +1,14 @@
 package com.miescuela.modelo;
 
-public class materia{
+public class Materia{
     private String nombreMateria;
     private String codigo;
     private int creditos;
     
-    public materia(){
+    public Materia(){
         
     }
-    public materia(String nombreMateria, String codigo, int creditos){
+    public Materia(String nombreMateria, String codigo, int creditos){
         this.nombreMateria = nombreMateria;
         this.codigo = codigo;
         this.creditos = creditos;
