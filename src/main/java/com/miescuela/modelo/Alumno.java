@@ -1,13 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.miescuela.modelo;
 
 /**
- *
- * @author ferlo
+ * Clase Alumno (mínima y básica)
+ * Requerida para que Inscripcion.java compile.
  */
 public class Alumno {
-    
+
+    private String matricula;
+    private String nombre;
+
+    public Alumno() {
+    }
+
+    public Alumno(String matricula, String nombre) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }
