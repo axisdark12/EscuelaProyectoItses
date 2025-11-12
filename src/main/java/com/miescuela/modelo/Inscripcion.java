@@ -1,54 +1,61 @@
 package com.miescuela.modelo;
 
+/**
+ * Clase de Asociación: Conecta un Alumno con una Materia.
+ * Responsable de guardar la calificación.
+ * Versión básica.
+ */
 public class Inscripcion {
 
-    //Atributos de Asociación y Valor JP
+   
     private Alumno alumno;
-    private materia materia;
-    private double calificacion;
+    private Materia materia;
+    
+    
+    private Double calificacion;
 
-    //Constructor por defecto JP
+    
     public Inscripcion() {
     }
 
-    public Inscripcion(Alumno alumno, materia materia, double calificacion) {
+    
+    public Inscripcion(Alumno alumno, Materia materia) {
         this.alumno = alumno;
         this.materia = materia;
-        this.calificacion = calificacion;
+        this.calificacion = null; 
     }
+
+    
 
     public Alumno getAlumno() {
         return alumno;
     }
- 
+
     public void setAlumno(Alumno alumno) {
         this.alumno = alumno;
     }
 
-    public materia getMateria() {
+    public Materia getMateria() {
         return materia;
     }
 
-    public void setMateria(materia materia) {
+    public void setMateria(Materia materia) {
         this.materia = materia;
     }
 
-    public double getCalificacion() {
+    public Double getCalificacion() {
         return calificacion;
     }
 
-    public void setCalificacion(double calificacion) {
+    public void setCalificacion(Double calificacion) {
         this.calificacion = calificacion;
     }
 
-    //Método toString JP
     @Override
     public String toString() {
-        return "Inscripcion{" +
-                // Se llama al toString() de Alumno y Materia para ver sus detalles JP
-                "alumno=" + (alumno != null ? alumno.toString() : "N/A") +
-                ", materia=" + (materia != null ? materia.toString() : "N/A") +
-                ", calificacion=" + calificacion +
-                '}';
+        String califStr = (calificacion == null) ? "Sin calificar" : calificacion.toString();
+        return "Inscripcion [Alumno: " + alumno.getNombre() + 
+               ", Materia: " + materia.getNombre() + 
+               ", Calif: " + califStr + "]";
     }
 }
