@@ -1,11 +1,15 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.miescuela.modelo;
 
 /**
- * Clase de Asociación: Conecta un Alumno con una Materia.
- * Responsable de guardar la calificación.
- * Versión básica.
+ *
+ * @author sebai
  */
 public class Inscripcion extends Alumno{
+     private Materia materia;
 
    
     private Materia materia;
@@ -41,5 +45,4 @@ public class Inscripcion extends Alumno{
     public void setCalificacion(Double calificacion) {
         this.calificacion = calificacion;
     }
-
 }

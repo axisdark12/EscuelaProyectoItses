@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author erick
  */
-public abstract class Escuela {
+public  class Escuela {
    private ArrayList<Alumno> Alumnos = new ArrayList<>();
    private ArrayList<Docente> Docentes = new ArrayList<>();
    private ArrayList<Materia> Materias = new ArrayList<>();
