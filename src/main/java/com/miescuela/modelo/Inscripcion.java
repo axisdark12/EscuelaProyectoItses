@@ -1,36 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.miescuela.modelo;
 
 /**
- * Clase de Asociación: Conecta un Alumno con una Materia.
- * Responsable de guardar la calificación.
- * Versión básica.
+ *
+ * @author sebai
  */
 public class Inscripcion extends Alumno{
-
-   
-    private materia materia;
+     private Materia materia;
     private Double calificacion;
 
     
     public Inscripcion() {
     }
 
-    public Inscripcion(materia materia, Double calificacion) {
+    public Inscripcion(Materia materia, Double calificacion) {
         this.materia = materia;
         this.calificacion = calificacion;
     }
 
-    public Inscripcion(materia materia, Double calificacion, String matricula, String nombre) {
+    public Inscripcion(Materia materia, Double calificacion, String matricula, String nombre) {
         super(matricula, nombre);
         this.materia = materia;
         this.calificacion = calificacion;
     }
 
-    public materia getMateria() {
+    public Materia getMateria() {
         return materia;
     }
 
-    public void setMateria(materia materia) {
+    public void setMateria(Materia materia) {
         this.materia = materia;
     }
 
@@ -41,5 +42,4 @@ public class Inscripcion extends Alumno{
     public void setCalificacion(Double calificacion) {
         this.calificacion = calificacion;
     }
-
 }

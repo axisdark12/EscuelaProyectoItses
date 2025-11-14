@@ -1,17 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.miescuela.modelo;
 
-
-public class materia {
-
+/**
+ *
+ * @author sebai
+ */
+public class Materia {
     private String clave;  
     private String nombre; 
 
    
-    public materia() {
+    public Materia() {
     }
 
     
-    public materia(String clave, String nombre) {
+    public Materia(String clave, String nombre) {
         this.clave = clave;
         this.nombre = nombre;
     }
