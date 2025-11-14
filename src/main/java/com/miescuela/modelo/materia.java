@@ -1,44 +1,41 @@
 package com.miescuela.modelo;
 
-public class materia{
-    private String nombreMateria;
-    private String codigo;
-    private int creditos;
+
+public class Materia {
+
+    private String clave;  
+    private String nombre; 
+
+   
+    public Materia() {
+    }
+
     
-    public materia(){
-        
+    public Materia(String clave, String nombre) {
+        this.clave = clave;
+        this.nombre = nombre;
     }
-    public materia(String nombreMateria, String codigo, int creditos){
-        this.nombreMateria = nombreMateria;
-        this.codigo = codigo;
-        this.creditos = creditos;
-        
+
+  
+
+    public String getClave() {
+        return clave;
     }
-    public String getNombreMateria(){
-        return nombreMateria;
+
+    public void setClave(String clave) {
+        this.clave = clave;
     }
-    public void setNombreMateria(String nombreMateria){
-        this.nombreMateria = nombreMateria;
+
+    public String getNombre() {
+        return nombre;
     }
-    public String getCodigo(){
-        return codigo;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-    public void setCodigo(String codigo){
-        this.codigo = codigo;
-    }
-    public int getCreditos(){
-        return creditos;
-    }
-    public void setCreditos(int creditos){
-        this.creditos = creditos;
-    }
-    
+
     @Override
-    public String toString(){
-        return "Materia{"+
-                "nombreMateria="+nombreMateria+
-                ", codigo=" + codigo +
-                ", creditos=" + creditos +
-                '}';
+    public String toString() {
+        return nombre + " (" + clave + ")";
     }
 }
