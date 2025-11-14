@@ -1,17 +1,17 @@
 package com.miescuela.modelo;
 
 
-public class materia {
+public class Materia {
 
     private String clave;  
-    private String nombre; 
+        private String nombre; 
 
    
-    public materia() {
+    public Materia() {
     }
 
     
-    public materia(String clave, String nombre) {
+    public Materia(String clave, String nombre) {
         this.clave = clave;
         this.nombre = nombre;
     }

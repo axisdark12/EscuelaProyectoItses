@@ -8,29 +8,29 @@ package com.miescuela.modelo;
 public class Inscripcion extends Alumno{
 
    
-    private materia materia;
+    private Materia materia;
     private Double calificacion;
 
     
     public Inscripcion() {
     }
 
-    public Inscripcion(materia materia, Double calificacion) {
+    public Inscripcion(Materia materia, Double calificacion) {
         this.materia = materia;
         this.calificacion = calificacion;
     }
 
-    public Inscripcion(materia materia, Double calificacion, String matricula, String nombre) {
+    public Inscripcion(Materia materia, Double calificacion, String matricula, String nombre) {
         super(matricula, nombre);
         this.materia = materia;
         this.calificacion = calificacion;
     }
 
-    public materia getMateria() {
+    public Materia getMateria() {
         return materia;
     }
 
-    public void setMateria(materia materia) {
+    public void setMateria(Materia materia) {
         this.materia = materia;
     }
 

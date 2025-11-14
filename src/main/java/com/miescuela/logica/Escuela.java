@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public abstract class Escuela {
    private ArrayList<Alumno> Alumnos = new ArrayList<>();
    private ArrayList<Docente> Docentes = new ArrayList<>();
-   private ArrayList<materia> Materias = new ArrayList<>();
+   private ArrayList<Materia> Materias = new ArrayList<>();
    
    public  void agregarAlumno(){
    
