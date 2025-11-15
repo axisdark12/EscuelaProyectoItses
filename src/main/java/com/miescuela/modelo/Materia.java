@@ -9,8 +9,11 @@ package com.miescuela.modelo;
  * @author sebai
  */
 public class Materia {
+
+public class Materia {
+
     private String clave;  
-    private String nombre; 
+        private String nombre; 
 
    
     public Materia() {
