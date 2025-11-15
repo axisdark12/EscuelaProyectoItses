@@ -10,6 +10,9 @@ package com.miescuela.modelo;
  */
 public class Inscripcion extends Alumno{
      private Materia materia;
+
+   
+    private Materia materia;
     private Double calificacion;
 
     
